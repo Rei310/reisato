@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    h1, h2 {
+      color: #2e5e2e; /* 暗めの緑色 */
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      color: black;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+
+    nav a {
+      font-size: 1.6em;
+      color: black;
+      text-decoration: underline;
+    }
+
+    p, li {
+      font-size: 1em;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    footer p {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .main-header {
+      color: white;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #2e5e2e;
+      color: white;
+      text-align: center;
+    }
+  </style>
+  <title>research</title>
+</head>
+<body>
+  <header style="background-color: #2e5e2e; text-align: center; padding: 10px 0;">
+    <p class="main-header">Research</p>
+  </header>
+  <div class="container">
+  <nav style="margin-top: 1em; text-align: center;">
+    <a href="index.html" style="margin: 0 1em;">Home</a>
+    <a href="news.html" style="margin: 0 1em;">News</a>
+    <a href="research.html" style="margin: 0 1em;">Research</a>
+    <a href="cv.html" style="margin: 0 1em;">CV</a>
+  </nav>
+
+  <main>
+    <section id="develop">
+      <h2>地球の進化過程の解明に向けた地震学的手法開発</h2>
+      <p>地球の進化過程を理解するには、現在の地球の内部構造を知る必要があります。
+地球は大まかに地殻・マントル・核からなる成層構造を持つと広く知られていますが、詳細な構造については現在も研究が進められています。
+構造を調べるには直接観察する事が最も手っ取り早いですが、人類は深さ約12 kmの深さまでしか到達出来ておらず、これは地球の半径約6400 kmに対してほんの表層でしかありません。
+そこで、地球深部の構造推定には地震波観測が広く用いられており、これまでの研究から地球内部には様々な不均質構造が存在することが分かってきました。
+しかし、マントル最下部よりも深い領域に関して、地震波の到達時刻（走時）を用いた既存の手法では鉛直方向に数百kmという、地球進化過程の詳細な議論を行うにはやや粗い解像度にとどまっていました。<br>
+私は、地震波走時のみならず地震波形の全情報（位相、振幅、波の形状など）を活用することで、高解像度での構造推定が可能な「波形インバージョン法」を拡張することで、これまで困難であった地球深部の高解像度構造推定手法を開発しています。現在はマントル対流の下部熱境界層である最下部マントル領域を対象に以下の二通りの構造推定を行っています。</p>
+    </section>
+
+    <section id="vsvp">
+    <h2>S波・P波速度構造推定</h2>
+      <p>地震波観測では対象領域における地震波の伝播速度（つまり、ある領域で地震波が早く伝わるか遅く伝わるか）しか推定できません。
+こうした地震波速度構造を温度や組成に解釈するには、温度や組成に対する横波（S波）と縦波（P波）の応答度合いの差異を利用して、S波・P波速度構造を同程度の解像度で同時に推定する必要があります。
+最下部マントルに関して、P波は液体外核にエネルギーが逃げるためデータが不足しており、解像度が低くなる傾向にありました。
+私が新たに開発した手法により、鉛直方向に約100 kmという従来より4倍高い解像度でS波・P波速度構造推定が可能となりました。
+これにより、最下部マントルでは海洋地殻成分が海洋プレート（スラブ）から剥がれ、鉄に富んだ小山や生成されると示唆されました。</p>
+    </section>
+    
+    <section id="anisotropy">
+    <h2>異方性構造推定</h2>
+      <p>地震波にとどまらず地球深部の観測では現在の様子、つまりスナップショットしか推定できず、動的プロセスを直接推定することはほぼ不可能です。
+マントルの流動方向など動的プロセスを地震学的に制約するには、異方性という概念が重要になります。
+異方性とは地震波の伝播速度が伝播"方向"によって"異なる"ことです。
+マントル構成鉱物の結晶一つ一つは異方的な構造を有していますが、通常はそれぞれの結晶がバラバラの方向を向いているため媒質全体では異方性を示しません（等方的）。
+しかし、定常的なマントル流動が存在する場合は、各結晶の向きが揃う現象（Crystallographic Preferred Orientation; CPO）が発生し媒質全体として異方性を示し得ます。
+つまり、異方性構造を推定することで間接的にマントルの流動方向が制約可能になるのです。
+異方性構造は等方性構造に比べて推定パラメータが増える（例えばS波等方的な場合一種類のみだが、異方的な場合は最低でも二種類存在する）ため、地震波形からより多くの情報を引き出す必要がありました。
+私が開発した手法では、鉛直方向に約100 kmという従来より4倍高い解像度での異方性構造推定が可能となりました。
+これにより、最下部マントルでスラブがどの様な方向に流動しているか制約することが可能となりました。</p>
+    </section>
+
+    <section id="interdisciplinary">
+    <h2>分野横断的な交流</h2>
+      <p>上記の手法開発の他に分野横断的な交流にも力を入れています。私の専門は地震学ですが、地球の進化過程の解明は地震学のみで達成できるものではありません。
+地震学的な構造推定結果を、高圧実験や鉱物物理シミュレーションなどの物性値や、対流シミュレーションの地球進化シナリオと比較する必要があります。
+私はこれらの分野の若手研究者との交流場として、オンライン上でのセミナー（<a href="https://x.com/chikyu_naibu" target="_blank" rel="noopener noreferrer">link</a>）を発足しました。現在は、地球内部科学に従事する日本各地の学生・研究生が参加しており、近隣分野への理解を深め合っています。</p>
+    </section>
+
+</main>
+</div>
+  <footer>
+    <p>&copy; 2025 Rei Sato</p>
+  </footer>
+</body>
+</html>
