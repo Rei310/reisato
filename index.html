@@ -49,6 +49,24 @@
       margin: 0;
     }
 
+    .profile-area {
+      display: flex;
+      gap: 2em;
+      align-items: flex-start;
+      margin-top: 1em;
+    }
+
+    #photo {
+      flex: 1;
+    }
+
+    .profile-text {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
     footer {
       background-color: #2e5e2e;
       color: white;
@@ -70,14 +88,27 @@
   </nav>
 
   <header style="display: flex; justify-content: space-between; align-items: flex-start;">
-    <div id="photo" style="flex: 1;">
-      <img src="image/profile.png" alt="Profile" width="200" style="margin-top: 1em;">
-    </div>
-    <div id="profile" style="flex: 2; text-align: left;">
-      <h2>Profile</h2>
-      <p>佐藤 嶺 (Rei Sato)<br>
-      東京大学 大学院理学系研究科 地球惑星科学専攻<br>
-      固体地球科学講座 河合研志研究室 博士課程3年生</p>
+    <div class="profile-area">    
+      <div id="photo">
+        <img src="image/profile.png" alt="Profile" width="200" style="margin-top: 1em;">
+      </div>
+      
+      <div class="profile-text">
+        <section id="profile">
+          <h2>Profile</h2>
+          <p>佐藤 嶺 (Rei Sato)<br>
+          東京大学 大学院理学系研究科 地球惑星科学専攻<br>
+          固体地球科学講座 河合研志研究室 博士課程3年生</p>
+          <p><a href="https://researchmap.jp/reisato?lang=ja" target="_blank" rel="noopener noreferrer">researchmap</a></p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Email: rei_sato@eps.s.u-tokyo.ac.jp</p>
+          <p><a href="https://www.facebook.com/share/19S66rE5R4/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+          <p><a href="http://linkedin.com/in/嶺-佐藤-a0785135b" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </section>
+      </div>
     </div>
   </header>
 
@@ -85,17 +116,15 @@
     <section id="news">
       <h2>Recent News</h2>
       <ul>
+        <li>2025.08.07: 数理科学実践研究レターが公開されました</li>
         <li>2025.07.19: JpGU2025学生優秀発表賞を受賞しました</li>
         <li>2025.07.19: ホームページを開設しました</li>
       </ul>
     </section>
 
-    <section id="contact">
+    <!--section id="contact">
       <h2>Contact</h2>
-      <p>Email: rei_sato@eps.s.u-tokyo.ac.jp</p>
-      <p><a href="https://www.facebook.com/share/19S66rE5R4/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-      <p><a href="http://linkedin.com/in/嶺-佐藤-a0785135b" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-    </section>
+          </section-->
   </main>
 </div>
   <footer>
